@@ -2,6 +2,9 @@ language: java
 jdk:
   - openjdk19
 
+script:
+  - ./mvm check
+
 deploy:
   provider: heroku
   api_key:
