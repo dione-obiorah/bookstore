@@ -2,13 +2,11 @@ language: java
 jdk:
   - openjdk19
 
-script:
-  - ./mvm check
-
 deploy:
   provider: heroku
   api_key:
     secure: $HEROKU_TOKEN
   app: "book-demo-store-22"
   on:
-    branch: main
+    tags: false
+    all_branches: true
