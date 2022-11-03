@@ -7,3 +7,5 @@ deploy:
   api_key:
     secure: $HEROKU_TOKEN
   app: "book-demo-store-22"
+  on:
+    all_branches: true
